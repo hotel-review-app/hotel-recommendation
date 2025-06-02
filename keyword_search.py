@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # --- 페이지 설정 ---
-st.set_page_config(layout="centered", page_title="호텔 리뷰 키워드 추천 시스템", page_icon="🏨")
+st.set_page_config(layout="centered", page_title="사용자 맞춤화 호텔 추천 시스템", page_icon="🏨")
 
 # --- CSS 스타일 (배경색, 가운데 정렬, 폰트 크기 조정 등) ---
 st.markdown("""
