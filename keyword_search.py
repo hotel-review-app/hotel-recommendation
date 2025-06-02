@@ -68,10 +68,10 @@ synonym_dict = {
 
     # --- 동의어 검색 함수 ---
 def find_synonym_set(keyword, synonym_dict):
-    for key, syn_list in synonym_dict.items():
-        if keyword == key or keyword in syn_list:
-            return list(set(syn_list + [key]))
-    return [keyword]
+    for key, values in synonym_dict.items():
+        if keyword == key or keyword in values:
+            return [key] + values
+    return [keyword]  # 사전에 없으면 입력어 하나만으로 검색
 
 # --- UI 구성 ---
 st.markdown("<h1 style='text-align: center;'>🔍 사용자 맞춤화 호텔 추천 시스템</h1>", unsafe_allow_html=True)
