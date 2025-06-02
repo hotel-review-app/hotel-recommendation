@@ -33,7 +33,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # --- CSV 불러오기 ---
-df = pd.read_csv(r'C:\Users\User\OneDrive\바탕 화면\4학년 1학기\캡스톤\리뷰데이터_0519_2.csv')
+df = pd.read_csv('리뷰데이터_0519_2.csv')
 df['tokens'] = df['tokens'].apply(eval)
 
 # 📌 동의어 사전
