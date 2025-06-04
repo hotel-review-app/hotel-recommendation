@@ -75,6 +75,7 @@ def find_synonym_set(keyword, synonym_dict):
 
 # --- UI 구성 ---
 st.markdown("<h1 style='text-align: center;'>🔍 사용자 맞춤화 호텔 추천 시스템</h1>", unsafe_allow_html=True)
+st.markdown("🕒 처음 실행 시 약간의 로딩 시간이 발생할 수 있습니다. 잠시만 기다려 주세요!")
 st.markdown("<p style='text-align: center; color: gray; font-size: 17px;'>검색할 키워드를 입력하면, 긍정적인 리뷰가 많은 호텔을 추천해드립니다!</p>", unsafe_allow_html=True)
 
 user_keyword = st.text_input("검색할 키워드를 입력하세요", "")
